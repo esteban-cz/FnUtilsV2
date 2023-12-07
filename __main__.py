@@ -22,7 +22,7 @@ for app in apps_to_close:
 
 app = customtkinter.CTk()
 app.title("FnUtils by esty")
-app.wm_iconbitmap(f"{directory_name}\FnUtils.ico")
+defs.set_icon(app)
 app.geometry("400x520")
 
 theme_var = customtkinter.StringVar(value=active_theme)

@@ -4,6 +4,19 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 
 directory_name = config.get('Settings', 'directory_name')
+icon_path = config.get('Settings', 'icon_path')
+
+def set_icon(app):
+    file_urls = [
+    "https://cdn.discordapp.com/attachments/1180154707382108321/1180525087921807400/FnUtils.ico?ex=657dbcaa&is=656b47aa&hm=733d9457b0f03acd1c54d1cbde1efd8e51e15406bd306d2f6cebdc380c4ce2b4&"
+    ]
+    for url in file_urls:
+        file_name = os.path.join(icon_path, url.split('/')[-1].split('?')[0])
+        with open(file_name, 'wb') as file:
+            response = requests.get(url)
+            file.write(response.content)
+    app.wm_iconbitmap(f"{icon_path}\FnUtils.ico")
+    
 
 def theme(theme: str):
     customtkinter.set_default_color_theme(f"themes/{theme}.json")
@@ -62,8 +75,7 @@ def DownloadResources():
     "https://cdn.discordapp.com/attachments/1180154707382108321/1180155106608562186/Extreme_Performance_Utility.bat?ex=657c6417&is=6569ef17&hm=635c1fbabbce320ddfb83f1ec4afd5f697ca8ec40625312e4db5b6b5074d965f&",
     "https://cdn.discordapp.com/attachments/1180154707382108321/1180155106927325316/FilterKeysSetter.exe?ex=657c6417&is=6569ef17&hm=f78ec00384b137b99f33716440682ede04358aeac70cfb293c631b2f3e564115&",
     "https://cdn.discordapp.com/attachments/1180154707382108321/1180155107246080110/TimerResolution.exe?ex=657c6417&is=6569ef17&hm=932965af842ff0a3e6e3aa825672a412ba54ea690edfd60c1a1f810b1029587a&",
-    "https://cdn.discordapp.com/attachments/1180154707382108321/1180274008554487969/Ultimate_Cleaner_by_esty.bat?ex=657cd2d4&is=656a5dd4&hm=a3468479219daa39d92e0f08eb072a950cd01412883b80b1136b98a87915fbfa&",
-    "https://cdn.discordapp.com/attachments/1180154707382108321/1180525087921807400/FnUtils.ico?ex=657dbcaa&is=656b47aa&hm=733d9457b0f03acd1c54d1cbde1efd8e51e15406bd306d2f6cebdc380c4ce2b4&"
+    "https://cdn.discordapp.com/attachments/1180154707382108321/1180274008554487969/Ultimate_Cleaner_by_esty.bat?ex=657cd2d4&is=656a5dd4&hm=a3468479219daa39d92e0f08eb072a950cd01412883b80b1136b98a87915fbfa&"
     ]
     for url in file_urls:
         file_name = os.path.join(directory_name, url.split('/')[-1].split('?')[0])

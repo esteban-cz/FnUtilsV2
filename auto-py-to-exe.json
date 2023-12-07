@@ -1,0 +1,97 @@
+{
+ "version": "auto-py-to-exe-configuration_v1",
+ "pyinstallerOptions": [
+  {
+   "optionDest": "noconfirm",
+   "value": true
+  },
+  {
+   "optionDest": "filenames",
+   "value": "C:/Users/tomec/VSCodeProjects/FnUtilsV2/__main__.py"
+  },
+  {
+   "optionDest": "onefile",
+   "value": false
+  },
+  {
+   "optionDest": "console",
+   "value": false
+  },
+  {
+   "optionDest": "icon_file",
+   "value": "C:/FnUtils/FnUtils.ico"
+  },
+  {
+   "optionDest": "clean_build",
+   "value": false
+  },
+  {
+   "optionDest": "strip",
+   "value": false
+  },
+  {
+   "optionDest": "noupx",
+   "value": false
+  },
+  {
+   "optionDest": "disable_windowed_traceback",
+   "value": false
+  },
+  {
+   "optionDest": "embed_manifest",
+   "value": true
+  },
+  {
+   "optionDest": "uac_admin",
+   "value": false
+  },
+  {
+   "optionDest": "uac_uiaccess",
+   "value": false
+  },
+  {
+   "optionDest": "argv_emulation",
+   "value": false
+  },
+  {
+   "optionDest": "bootloader_ignore_signals",
+   "value": false
+  },
+  {
+   "optionDest": "win_private_assemblies",
+   "value": false
+  },
+  {
+   "optionDest": "win_no_prefer_redirects",
+   "value": false
+  },
+  {
+   "optionDest": "ascii",
+   "value": false
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/tomec/VSCodeProjects/FnUtilsV2/themes;themes/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/tomec/VSCodeProjects/FnUtilsV2/__pycache__;__pycache__/"
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/tomec/VSCodeProjects/FnUtilsV2/config.ini;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/tomec/VSCodeProjects/FnUtilsV2/defs.py;."
+  },
+  {
+   "optionDest": "datas",
+   "value": "C:/Users/tomec/VSCodeProjects/FnUtilsV2/LICENSE;."
+  }
+ ],
+ "nonPyinstallerOptions": {
+  "increaseRecursionLimit": true,
+  "manualArguments": ""
+ }
+}
